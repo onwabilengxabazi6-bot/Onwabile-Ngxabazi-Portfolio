@@ -1,0 +1,368 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #0a0a0a;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    background: radial-gradient(circle at top, #111, #050505);
+    overflow-x: hidden;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    background-color: #111;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    border-bottom: 1px solid #222;
+
+    backdrop-filter: blur(10px);
+
+    background: rgba(20, 20, 20, 0.6);
+
+}
+
+.logo {
+    color: cyan;
+
+    font-size: 28px;
+
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 10px cyan;
+}
+
+
+nav ul {
+    display: flex;
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: cyan;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+
+.hero-text h1 {
+    font-size: clamp(32px, 6vw, 60px);
+
+    margin-bottom: 20px;
+
+    color: cyan;
+
+    text-shadow: 0 0 20px cyan;
+}
+
+
+.hero-text p {
+     max-width: 800px;
+     width: 100%;
+    margin-bottom: 30px;
+
+    line-height: 1.8;
+
+    color: #ccc;
+
+    font-size: 18px;
+}
+
+
+button {
+    padding: 15px 35px;
+
+    border: none;
+
+    background-color: cyan;
+
+    color: black;
+
+    font-size: 16px;
+
+    box-shadow: 0 0 20px cyan;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+
+    background-color: white;
+}
+
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 100px 60px;
+}
+
+
+section h2 {
+    font-size: 40px;
+
+    margin-bottom: 25px;
+
+    color: cyan;
+}
+
+
+section p {
+    line-height: 1.8;
+
+    color: #ccc;
+
+    max-width: 900px;
+}
+
+
+/* PROJECT CARD */
+
+.project-card {
+    background-color: #111;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #222;
+
+    transition: 0.3s ease;
+
+    backdrop-filter: blur(10px);
+
+    background: rgba(255,255,255,0.03);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: cyan;
+    box-shadow: 0 0 20px cyan;
+}
+
+
+
+/* CONTACT */
+
+.contact p {
+    margin-top: 20px;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: none;
+
+    background-color: cyan;
+    border: none;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 1000;
+}
+
+#topBtn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 80px 60px;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+section {
+    padding: 100px 60px;
+}
+
+
+#heroTitle {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: cyan;
+    text-shadow: 0 0 20px cyan;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .menu-toggle {
+           display: block;
+}
+
+}
+
+.menu-toggle {
+
+    display: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.light-mode {
+
+    background: white;
+
+    color: black;
+}
+
+.skills-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+.skill-card {
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid #222;
+
+    transition: 0.3s;
+}
+
+
+.skill-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: cyan;
+
+    box-shadow: 0 0 15px cyan;
+}
+
+.certifications ul {
+
+    margin-top: 20px;
+
+    line-height: 2;
+}
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+
+input,
+textarea {
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #222;
+
+    background: rgba(255,255,255,0.05);
+
+    color: white;
+
+    font-size: 16px;
+}
+
+
+textarea {
+
+    min-height: 150px;
+
+    resize: none;
+}
