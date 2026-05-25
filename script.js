@@ -19,8 +19,7 @@ button.addEventListener("click", function () {
 
 const heroTitle = document.querySelector("#heroTitle");
 
-const text = "Electronics Engineer & Creative Technologist";
-
+const text = "Welcome to Onwabile Ngxabazi Portfolio";
 let index = 0;
 
 function typeEffect() {
